@@ -1,7 +1,7 @@
 specVersion: 0.0.4
-repository: https://github.com/r-strawser/tenk-subgraph-template.git # repo where subgraph project is stored
+repository: https://github.com/r-strawser/tenk-subgraph-template.git
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 features:
   - fullTextSearch
 dataSources:
@@ -9,7 +9,7 @@ dataSources:
     name: nymphs
     network: near-mainnet
     source:
-      account: "nymphs.near"
+      account: nymphs.near
       startBlock: 61518436
     mapping:
       apiVersion: 0.0.5
@@ -23,4 +23,4 @@ dataSources:
         - Burn
       receiptHandlers:
         - handler: handleReceipt
-      file: ./src/mapping.ts
+      file: nymphs/nymphs.wasm
