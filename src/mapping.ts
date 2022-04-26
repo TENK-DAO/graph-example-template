@@ -122,14 +122,14 @@ function handleAction(
         let ids:JSONValue[] = tokenIds.toArray()
 
         // insert contract metadata --> can also be assigned and updated through fetching most recent 'new' or 'new_default_metadata'
-        let contract = Contract.load("futurenft.near")
+        let contract = Contract.load("monkegodz.tenk.near")
         if(!contract) {
-          contract = new Contract("futurenft.near")
-          contract.id = "futurenft.near"
-          contract.name = "NEAR Future"
-          contract.symbol = "nearfuture"
-          contract.base_uri = "https://bafybeigxj7qbjear55zwzfbam42via5c7ycawfpb5lpy2qqxhnomn2lnga.ipfs.dweb.link/"
-          contract.media_uri = "https://bafybeiazrw5wem27wql5wojx44yzhoezeh4frkrujdvctrxftv24km7lse.ipfs.dweb.link/"
+          contract = new Contract("monkegodz.tenk.near")
+          contract.id = "monkegodz.tenk.near"
+          contract.name = "MonkeGodz"
+          contract.symbol = "monkegodz"
+          contract.base_uri = "https://bafybeifsdphettrnpummvpsboi45my5jcaft55mcz6e7o552zqhjzcfvj4.ipfs.dweb.link"
+          contract.media_uri = ""
           contract.copies = BigInt.zero();
           contract.total_minted = BigInt.zero();
           contract.total_burned = BigInt.zero();
